@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+    <listeners>
+        <listener class-name="listeners.TestListener" />
+    </listeners>
+    <test name="HONOR PLAY">
+
+        <parameter name="emulator" value="false" />
+        <parameter name="platformName" value="Android" />
+        <parameter name="udid" value="58H3Y18720017229" />
+        <parameter name="deviceName" value="Honor Play" />
+        <parameter name="systemPort" value="10000" />
+        <parameter name="chromeDriverPort" value="11000" />
+        <classes>
+            <class name="LoginTest.LoginTests"/>
+        </classes>
+    </test>
+<!--    <test name="REDMI NOTE 8">-->
+
+<!--        <parameter name="emulator" value="false" />-->
+<!--        <parameter name="platformName" value="Android" />-->
+<!--        <parameter name="udid" value="13878b71" />-->
+<!--        <parameter name="deviceName" value="Redmi Note 8" />-->
+<!--        <parameter name="systemPort" value="10000" />-->
+<!--        <parameter name="chromeDriverPort" value="11000" />-->
+<!--        <classes>-->
+<!--            <class name="LoginTest.LoginTests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!--    <test name="iPhone11">-->
+
+    <!--        <parameter name="platformName" value="iOS" />-->
+    <!--        <parameter name="udid" value="63E2D54C-CA63-4ECA-89C2-61F2F41EE2F7" />-->
+    <!--        <parameter name="deviceName" value="iPhone 12 Pro Max" />-->
+    <!--        <parameter name="wdaLocalPort" value="10001" />-->
+    <!--        <parameter name="webkitDebugProxyPort" value="11001" />-->
+    <!--        <classes>-->
+    <!--            <class name="com.qa.tests.LoginTests"/>-->
+    <!--            <class name="com.qa.tests.ProductTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite> <!-- Suite -->
